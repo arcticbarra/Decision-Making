@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Decisions_Making" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Option 2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-fm-cWO">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Option 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qT-oC-Im6">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7R-pi-zxC">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Help me decide">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgv-NB-eBd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D E C I S I O N S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-Rd-yMz">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the longest possible answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW5-Fb-jRS">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ydr-fm-cWO" firstAttribute="top" secondItem="2qT-oC-Im6" secondAttribute="bottom" constant="48" id="3BE-vU-fKC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2qT-oC-Im6" secondAttribute="trailing" constant="20" id="B3S-fm-y0j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B7R-pi-zxC" secondAttribute="trailing" constant="76" id="Ece-w6-R9f"/>
+                            <constraint firstItem="RW5-Fb-jRS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FkG-9v-lkc"/>
+                            <constraint firstItem="ydr-fm-cWO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Kzj-Ll-GHR"/>
+                            <constraint firstItem="2qT-oC-Im6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Qwa-pA-oTR"/>
+                            <constraint firstItem="B7R-pi-zxC" firstAttribute="top" secondItem="ydr-fm-cWO" secondAttribute="bottom" constant="72" id="UgV-6C-5zb"/>
+                            <constraint firstItem="4aH-Rd-yMz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Uk4-kx-bLL"/>
+                            <constraint firstItem="4aH-Rd-yMz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCq-am-cdq"/>
+                            <constraint firstItem="2qT-oC-Im6" firstAttribute="top" secondItem="4aH-Rd-yMz" secondAttribute="bottom" constant="93" id="g4j-eD-zff"/>
+                            <constraint firstItem="RW5-Fb-jRS" firstAttribute="top" secondItem="B7R-pi-zxC" secondAttribute="bottom" constant="82.5" id="heb-6j-cx3"/>
+                            <constraint firstItem="B7R-pi-zxC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="lf3-si-nq8"/>
+                            <constraint firstItem="B7R-pi-zxC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTV-nl-9wo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ydr-fm-cWO" secondAttribute="trailing" constant="20" id="z1r-bJ-546"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="B7R-pi-zxC" id="L5v-Iy-Pgw"/>
+                        <outlet property="choice1" destination="2qT-oC-Im6" id="G4r-1W-k0h"/>
+                        <outlet property="choice2" destination="ydr-fm-cWO" id="Qaj-mm-dsq"/>
+                        <outlet property="finalChoice" destination="RW5-Fb-jRS" id="c9P-tu-88Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106.40000000000001" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
